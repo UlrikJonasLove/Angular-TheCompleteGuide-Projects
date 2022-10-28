@@ -1,0 +1,4 @@
+<!--The square bracket indicate we want to bind to some property on the directive-->
+<p 
+    [ngStyle]="{backgroundColor: getColor()}"
+    [ngClass]="{online: serverStatus === 'online'}">{{ "server" }} with ID {{ serverId }} is {{ getServerStatus() }}</p>
