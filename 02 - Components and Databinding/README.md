@@ -1,27 +1,23 @@
-# FirstApp
+### Components and Databinding Deep Dive
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.7.
+* Binding to custom properties
+* Binding to custom events
+* Passing and using data with @Input and @Output
+* Using local references in templates
+* Understanding the component lifecycle hooks - ngOnInit, ngAfterContentInit, ngAfterViewInit, ngDoCheck, ngOnDestroy, ngAfterContentChecked, ngAfterViewChecked, ngAfterContentChecked, ngAfterViewChecked
+* Using ng-content to project content into a component
+* Using ViewEncapsulation to encapsulate styles
+* Using the @ContentChild and @ViewChild decorators to access elements in the DOM
 
-## Development server
+### "npm install"
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+To install node_modules folder (use terminal)
 
-## Code scaffolding
+### "npm install -g @angular/cli@12" 
+to install angular cli version 12 (use terminal)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### "ng serve" 
 
-## Build
+For a dev server. Navigate to `http://localhost:4200/` (use terminal). 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+The app will automatically reload if you change any of the source files.
