@@ -20,6 +20,14 @@ All the projects from Udemy Course "Angular - The Complete Guide" with alot of c
 * Using ViewEncapsulation to encapsulate styles
 * Using the @ContentChild and @ViewChild decorators to access elements in the DOM
 
+### 3. Directives Deep Dive
+
+* Using the @HostListener and @HostBinding decorators to listen to and bind to host events and properties
+* Directives - NgSwitch, NgSwitchCase, NgSwitchDefault, NgIf, NgClass, NgStyle, NgFor
+* Creating custom directives
+* Using the Renderer2 to access the DOM
+* Using the ElementRef to access the DOM
+* Using the @Input to pass data into a directive
 
 
 ### Course Project 

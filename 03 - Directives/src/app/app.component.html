@@ -1,0 +1,63 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <button
+        class="btn btn-primary"
+        (click)="onlyOdd = !onlyOdd">Only show odd numbers</button>
+      <br><br>
+      <ul class="list-group">
+        <div *ngIf="onlyOdd">
+          <li
+          class="list-group-item"
+          [ngClass]="{odd: odd % 2 !== 0}"
+          [ngStyle]="{backgroundColor: odd % 2 !== 0 ? 'lightblue' : 'transparent'}"
+          *ngFor="let odd of oddNumbers"> <!--* star means its a structural directive-->
+          {{ odd }}
+        </li>
+      </div>
+      <!--This is the same as below with custom directive-->
+      <div *unless="onlyOdd">
+        <li
+        class="list-group-item"
+        [ngClass]="{odd: even % 2 !== 0}"
+        *ngFor="let even of evenNumbers"> <!--* star means its a structural directive-->
+        {{ even }}
+      </li>
+      </div>
+        <div *ngIf="!onlyOdd">
+          <li
+          class="list-group-item"
+          [ngClass]="{odd: even % 2 !== 0}"
+          *ngFor="let even of evenNumbers"> <!--* star means its a structural directive-->
+          {{ even }}
+        </li>
+        </div>
+        <!--this code is exactly the same as the above-->
+        <ng-template [ngIf]="!onlyOdd">
+          <div>
+            <li
+              class="list-group-item"
+              [ngClass]="{odd: even % 2 !== 0}"
+              *ngFor="let even of evenNumbers"> <!--* star means its a structural directive-->
+              {{ even }}
+            </li>
+          </div>
+        </ng-template>
+
+        
+      </ul>
+      <p appBasicHighlight>Style me with basic directive!</p>
+      <!-- Here we can also change the default and highlighted colors -->
+      <p appBetterHighlight [defaultColor]="'yellow'" [highlightColor]="'red'">Style me with better directive!</p>
+      <div [ngSwitch]="value">
+        <p *ngSwitchCase="1">One</p>
+        <p *ngSwitchCase="2">Two</p>
+        <p *ngSwitchCase="3">Three</p>
+        <p *ngSwitchDefault>Default</p>
+      </div>
+      <ng-template [ngIf]="onlyOdd">
+        <p>Only odd</p>
+      </ng-template>
+    </div>
+  </div>
+</div>
