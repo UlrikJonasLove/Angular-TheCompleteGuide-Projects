@@ -12,8 +12,7 @@ All the projects from Udemy Course "Angular - The Complete Guide" with alot of c
 
 ### 2. Components and Databinding Deep Dive
 
-* Binding to custom properties
-* Binding to custom events
+* Binding to custom properties & custom events
 * Passing and using data with @Input and @Output
 * Using local references in templates
 * Understanding the component lifecycle hooks - ngOnInit, ngAfterContentInit, ngAfterViewInit, ngDoCheck, ngOnDestroy, ngAfterContentChecked, ngAfterViewChecked, ngAfterContentChecked, ngAfterViewChecked
