@@ -1,5 +1,6 @@
-import { Component, ElementRef, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Ingredient } from 'src/app/Shared/models/ingredient.model';
+import { ShoppingListService } from '../shopping-list/shopping-list.service';
 
 @Component({
   selector: 'app-shopping-list-edit',
@@ -9,9 +10,8 @@ import { Ingredient } from 'src/app/Shared/models/ingredient.model';
 export class ShoppingListEditComponent implements OnInit {
   @ViewChild("nameInput", {static: false}) nameInputRef: ElementRef;
   @ViewChild("amountInput", {static: false}) amountInputRef: ElementRef;
-  @Output() ingredientAdded = new EventEmitter<Ingredient>(); // this is the event emitter that will be used to pass data from child to parent
 
-  constructor() { }
+  constructor(private slService: ShoppingListService) { }
 
   ngOnInit(): void {
   }
@@ -21,7 +21,7 @@ export class ShoppingListEditComponent implements OnInit {
     const ingName = this.nameInputRef.nativeElement.value; // get the value of the name input
     const ingAmount = this.amountInputRef.nativeElement.value; // get the value of the amount input
     const newIngredient = new Ingredient(ingName, ingAmount); // create a new ingredient with the name and amount
-    this.ingredientAdded.emit(newIngredient); // emit the new ingredient to the parent component
+    this.slService.addIngredient(newIngredient); // add the new ingredient to the shopping list
   }
 
 }

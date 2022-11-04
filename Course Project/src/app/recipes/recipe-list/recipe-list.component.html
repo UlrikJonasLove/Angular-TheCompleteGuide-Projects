@@ -9,8 +9,7 @@
         <!--the [recipe] is binding from recipe-item component--> 
         <app-recipe-item 
         *ngFor="let recipeEl of recipes"
-        [recipe]="recipeEl"
-        (recipeSelected)="onRecipeSelected(recipeEl)">
+        [recipe]="recipeEl">
         ></app-recipe-item>
     </div>
 </div>

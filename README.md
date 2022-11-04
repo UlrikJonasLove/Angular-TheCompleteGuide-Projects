@@ -29,6 +29,14 @@ All the projects from Udemy Course "Angular - The Complete Guide" with alot of c
 * Using the ElementRef to access the DOM
 * Using the @Input to pass data into a directive
 
+### 4. Services and Dependency Injection
+
+* Creating a service
+* Injecting a service into a component
+* Injecting a service into another service
+* Using services for cross-component communication
+* Using a service for data storage
+* Service hierarchical injector
 
 ### Course Project 
 

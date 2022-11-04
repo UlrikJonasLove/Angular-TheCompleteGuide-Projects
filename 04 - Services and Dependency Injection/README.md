@@ -1,8 +1,11 @@
-### The Basics
+### Services and Dependency Injection
 
-* Angular Basics
-* Components & Databinding - String Interpolation, Property Binding, Event Binding, Two-Way Binding
-* Directives - NgIf, NgFor, NgClass, NgStyle
+* Creating a service
+* Injecting a service into a component
+* Injecting a service into another service
+* Using services for cross-component communication
+* Using a service for data storage
+* Service hierarchical injector
 
 ### "npm install"
 

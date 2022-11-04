@@ -1,4 +1,4 @@
-### 3. Directives Deep Dive
+### Directives Deep Dive
 
 * Using the @HostListener and @HostBinding decorators to listen to and bind to host events and properties
 * Directives - NgSwitch, NgSwitchCase, NgSwitchDefault, NgIf, NgClass, NgStyle, NgFor

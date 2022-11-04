@@ -10,6 +10,8 @@ import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component
 import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
 import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
 import { FormsModule } from '@angular/forms';
+import { DropdownDirective } from './Shared/dropdown.directive';
+import { ShoppingListService } from './shopping/shopping-list/shopping-list.service';
 
 @NgModule({
   declarations: [
@@ -21,13 +23,14 @@ import { FormsModule } from '@angular/forms';
     RecipesComponent,
     RecipeListComponent,
     RecipeItemComponent,
-    RecipeDetailComponent
+    RecipeDetailComponent,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ShoppingListService], // adding shopping list service to the providers array because we want to use it in the entire application
   bootstrap: [AppComponent]
 })
 export class AppModule { }
