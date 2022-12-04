@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <ul class="nav nav-tabs">
+        <li role="presentation" 
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{exact: true}"><a routerLink="/">Home</a></li> <!-- RoutherLink is a directive for routing without re-loading the app -->
+        <li role="presentation" 
+          routerLinkActive="active"><a routerLink="servers">Servers</a></li> <!-- Relative paths without /servers because they are at root level -->
+        <li role="presentation" 
+          routerLinkActive="active"><a [routerLink]="['users']">Users</a></li> <!-- if it is a level below root, it need to be an absolute path /users -->
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <router-outlet></router-outlet> <!-- this is a router directive, it marks the place where we want to load the route components -->
+    </div>
+  </div>
+</div>

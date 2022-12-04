@@ -38,6 +38,21 @@ All the projects from Udemy Course "Angular - The Complete Guide" with alot of c
 * Using a service for data storage
 * Service hierarchical injector
 
+### 5. Routing
+
+* Setting up routing
+* Passing parameters to routes
+* Fetching route parameters with the ActivatedRoute
+* Navigation programatically with the Router
+* Navigation paths - relative and absolute
+* Protecting routes with canActivate
+* Protecting child routes with canActivateChild
+* canDeactivate to prevent navigation away from a route
+* Passing static data to a route
+* Resolving dynamic data with the resolve guard
+* Location strategies - hash and HTML5 pushState
+
+
 ### Course Project 
 
 The course project is a bigger project of all the concepts above, learned in this course
