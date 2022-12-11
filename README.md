@@ -52,6 +52,16 @@ All the projects from Udemy Course "Angular - The Complete Guide" with alot of c
 * Resolving dynamic data with the resolve guard
 * Location strategies - hash and HTML5 pushState
 
+### 6. Observables
+
+* Creating and using observables with RxJS
+* Using Subjects to pass data between components
+* Using operators to transform data
+* Custom interval observable
+* Error handling with observables
+* Completing observables
+* Unsubscribing from observables
+
 
 ### Course Project 
 
