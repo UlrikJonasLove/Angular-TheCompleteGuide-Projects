@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { interval, Observable, Subscription } from 'rxjs'; // needed when we create a new observable
-// import { map } from 'rxjs/operators';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-home',
@@ -48,6 +48,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     // customIntervalObservable.pipe(map((data: number) => { // the data is the value emitted by the observable
     //   return 'Round: ' + (data + 1);
     // })); // we can use operators on observables
+    // these lines can be replaced by the following line of code 'customIntervalObserveable' below
 
     // we can subscribe to the observable
     // subsribe means that we listen to the observable

@@ -1,11 +1,11 @@
-import { EventEmitter, Injectable } from "@angular/core";
+import { Injectable } from "@angular/core";
 import { Ingredient } from "../Shared/models/ingredient.model";
 import { ShoppingListService } from "../shopping/shopping-list/shopping-list.service";
 import { Recipe } from "./recipe.model";
 
 @Injectable() // we can now inject this service into other components
 export class RecipeService {
-    recipeSelected = new EventEmitter<Recipe>();
+    // recipeSelected = new EventEmitter<Recipe>();
     // create an array of recipes, only Recipes can be added to this array since its a type of Recipe
     private recipes: Recipe[] = [
         new Recipe(
